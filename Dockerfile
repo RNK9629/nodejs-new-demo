@@ -9,6 +9,8 @@ WORKDIR /usr/src/app
 #Copy package.json in the image
 COPY package.json ./
 
+COPY script.sh ./
+
 
 
 #Run npm install command
