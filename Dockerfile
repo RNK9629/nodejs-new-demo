@@ -1,9 +1,9 @@
 #Base Image node:12.18.4-alpine
-FROM node:12.18.4-alpine
+FROM node:14
 
 
 #Set working directory to /app
-WORKDIR /app
+WORKDIR /usr/src/app
 
 
 #Copy package.json in the image
