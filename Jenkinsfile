@@ -5,7 +5,7 @@ pipeline {
         AWS_DEFAULT_REGION="ap-southeast-2" 
 	CLUSTER_NAME="cluster001"
 	SERVICE_NAME="service-ecs"
-	TASK_DEFINITION_NAME="node-js"
+	TASK_DEFINITION_NAME="nodejs"
 	DESIRED_COUNT="0"
         IMAGE_REPO_NAME="224316520039.dkr.ecr.ap-southeast-2.amazonaws.com/node-ecs"
         IMAGE_TAG="${env.BUILD_ID}"
