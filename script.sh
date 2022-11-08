@@ -18,4 +18,4 @@ aws ecs register-task-definition --family ${TASK_DEFINITION_NAME} --cli-input-js
 
 REVISION=`aws ecs describe-task-definition --task-definition "${TASK_DEFINITION_NAME}" --region ap-southeast-2 | jq .taskDefinition.revision`
 echo "REVISION= " "${REVISION}"
-aws ecs update-service --cluster "${CLUSTER_NAME}" --service "${SERVICE_NAME}" --task-definition "${TASK_DEFINITION_NAME}":"${REVISION}" --desired-count "${DESIRED_COUNT}" --force-new-deployment --region ap-southeast-2
+aws ecs update-service --cluster cluster001 --service service-ecs --task-definition nodejs:1 --desired-count 1 --force-new-deployment --region ap-southeast-2
