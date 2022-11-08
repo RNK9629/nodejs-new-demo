@@ -10,6 +10,9 @@ WORKDIR /usr/src/app
 COPY package.json ./
 
 
+ENV PATH /app/node_modules/.bin:$PATH
+
+
 #Run npm install command
 RUN npm install
 
