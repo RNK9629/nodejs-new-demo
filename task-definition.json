@@ -1,23 +1,28 @@
-{
-    "family": FAMILY,
-    "containerDefinitions": [
-        {
-            "image": "REPOSITORY_URI:BUILD_NUMBER",
-            "name": nodejs,
-	    "essential": true,
-            "portMappings": [
-                {
-                    "containerPort": 3000,
-                    "hostPort": 0
-                }
-            ]
-        }
-    ],
-    "cpu": "256",
-    "memory": "512",
-    "requiresCompatibilities": [
-             "EC2"
-    ],
-    "networkMode": "awsvpc",
-    "executionRoleArn": ROLE_ARN 
+{ 
+    "family": "",
+	"taskRoleArn": "",
+	"containerDefinitions": [{
+		"name": "",
+		"image": "",
+		"cpu": 300,
+		"memory": 300,
+		"memoryReservation": 200,
+		"volumesFrom": [],
+		"portMappings": [{
+			"hostPort": 0,
+			"containerPort": 3000,
+			"protocol": "tcp"
+		}],
+		"essential": true,
+		"logConfiguration": {
+			"logDriver": "awslogs",
+			"options": {
+			  "awslogs-group": "nivesh",
+			  "awslogs-region": "ap-southeast-2",
+			  "awslogs-stream-prefix": "node"
+			}
+		  },
+		"environment": [],
+		"mountPoints": []
+	}]
 }
