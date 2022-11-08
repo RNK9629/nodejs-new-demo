@@ -1,5 +1,5 @@
 { 
-    "family": "",
+    "family": "nodejs",
 	"taskRoleArn": "",
 	"containerDefinitions": [{
 		"name": "",
