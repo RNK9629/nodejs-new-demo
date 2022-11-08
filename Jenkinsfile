@@ -6,7 +6,7 @@ pipeline {
 	CLUSTER_NAME="cluster001"
 	SERVICE_NAME="service-ecs"
 	TASK_DEFINITION_NAME="nodejs"
-	DESIRED_COUNT="0"
+	DESIRED_COUNT="1"
         IMAGE_REPO_NAME="224316520039.dkr.ecr.ap-southeast-2.amazonaws.com/node-ecs"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
