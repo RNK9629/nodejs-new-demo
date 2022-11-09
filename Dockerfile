@@ -11,6 +11,8 @@ COPY package.json ./
 
 COPY script.sh ./
 
+COPY server.js ./
+
 
 
 #Run npm install command
