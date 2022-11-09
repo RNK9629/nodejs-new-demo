@@ -11,7 +11,7 @@ COPY package.json ./
 
 COPY script.sh ./
 
-COPY server.js ./
+COPY /src/server.js ./
 
 
 
