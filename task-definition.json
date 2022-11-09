@@ -4,9 +4,9 @@
 	"containerDefinitions": [{
 		"name": "container-ecs",
 		"image": "224316520039.dkr.ecr.ap-southeast-2.amazonaws.com/node-ecs",
-		"cpu": 300,
-		"memory": 300,
-		"memoryReservation": 200,
+		"cpu": 600,
+		"memory": 600,
+		"memoryReservation": 500,
 		"volumesFrom": [],
 		"portMappings": [{
 			"hostPort": 0,
